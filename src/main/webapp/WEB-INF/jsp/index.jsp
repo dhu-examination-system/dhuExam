@@ -3,6 +3,7 @@
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path;
+    String test = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 %>
 <html>
 <head>
@@ -40,6 +41,7 @@
 <body>
 <jsp:include page="component/navbar.jsp"/>
 <h2 class="text-center">网上考试系统</h2>
+<div id="test1"><h2><%=test%></h2></div>
 <div class="container hidden" id="teacher_main">
     <div class="row">
         <div class="col-md-2"></div>
